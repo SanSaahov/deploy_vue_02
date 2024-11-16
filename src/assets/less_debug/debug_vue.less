@@ -1,0 +1,129 @@
+// ========================================================================
+// Эти ±элем. нужны для управления обоими дебагами || для дебага ОБЫЧНОГО Vue JS
+.debugGrid {
+   //.debug_Grid;
+}
+
+html {
+   &:before {
+      .point_06;
+   }
+}
+
+// ========================================================================
+// Эти классы нужны для дебага от Д.Лаврика
+.dbcontainer {
+   width: 100%;
+   max-width: @__container_width;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: @__container_padding;
+   padding-right: @__container_padding;
+}
+
+.dbrow {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: @__row_margin;
+   margin-right: @__row_margin;
+   
+   & > * {
+      width: 100%;
+      max-width: 100%;
+      padding-left: @__row_padding;
+      padding-right: @__row_padding;
+      flex-shrink: 0;
+   }
+}
+
+.dbcol-1 {
+   flex: 0 0 auto;
+   width: @__col_width;
+}
+
+.debug_Grid {
+   box-sizing: border-box;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 100000;
+   
+   &__elem {
+      outline: 1px #ff0 solid;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.3);
+      height: 100vh;
+   }
+}
+
+// ========================================================================
+// Эти классы нужны для дебага с отображениме брекпоинтов
+.point_01 {
+   top: 5vh;
+   left: 5vw;
+}
+
+.point_02 {
+   transform: translate(-50%, -50%);
+   top: 5vh;
+   left: 50vw;
+}
+
+.point_03 {
+   top: 5vh;
+   right: 5vw;
+}
+
+.point_04 {
+   top: 50vh;
+   left: 5vw;
+}
+
+.point_05 {
+   transform: translate(-50%, -50%);
+   top: 50vh;
+   left: 50vw;
+}
+
+.point_06 {
+   top: 50vh;
+   right: 5vw;
+}
+
+html {
+   position: relative;
+   
+   &:before {
+      border: 3px solid brown;
+      position: fixed;
+      background-color: orange;
+      font-size: 50px;
+      line-height: 1;
+      padding: 5px 20px;
+      z-index: 100000;
+   }
+   
+   &:before {
+      .xs_block({
+         content: 'xs';
+      });
+      .sm_block({
+         content: 'sm';
+      });
+      .md_block({
+         content: 'md';
+      });
+      .lg_block({
+         content: 'lg';
+      });
+      .xl_block({
+         content: 'xl';
+      });
+      .xxl_block({
+         content: 'xxl';
+      });
+   }
+}

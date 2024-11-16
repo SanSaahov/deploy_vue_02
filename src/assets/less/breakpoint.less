@@ -1,0 +1,136 @@
+// ======= breakpoints ================================
+@xs: 0px;
+@sm: 576px;
+@md: 768px;
+@lg: 992px;
+@xl: 1200px;
+@xxl: 1400px;
+@big: 2560px;
+
+.ft_block (@min, @max, @rules) {
+   @media (min-width: @min) and (max-width: @max) {
+      @rules();
+   }
+}
+
+// @media (orientation: landscape) {
+//    /*Стиль применится при горизонтальной ориентации устройства*/
+// }
+// @media (orientation: portrait) {
+//    /*Стиль применится при портретной ориентации устройства*/
+// }
+
+// Медиазапросы можно встраивать внутрь тегов HTML.
+// Определяет устройство, для которого следует применять стилевое оформление.
+// Это позволяет сделать разный стиль для отображения документа
+// на экране монитора и при его печати.
+// Допускается писать несколько значений через запятую
+//
+//    link media="all|braille|handheld|print|screen|speech|projection|tty|tv">
+//
+// == all - Все устройства.
+// == braille - Устройства, основанные на системе Брайля, предназначены для слепых людей.
+// == handheld - Наладонники, смартфоны, устройства с малой шириной экрана.
+// == print - Печатающее устройство вроде принтера.
+// == screen - Экран монитора.
+// == speech - Речевые синтезаторы, а также программы для воспроизведения текста вслух. Сюда же входят речевые браузеры.
+// == projection - Проектор.
+// == tty - Телетайпы, терминалы, портативные устройства с ограниченными возможностями экрана. Для них не должны использоваться пикселы в качестве единиц измерения.
+// == tv - Телевизор.
+
+// ======= @media mobile first ========================
+.xs_block(@rules) {
+   @media (min-width: @xs) {
+      @rules();
+   }
+}
+
+.sm_block(@rules) {
+   @media (min-width: @sm) {
+      @rules();
+   }
+}
+
+.md_block(@rules) {
+   @media (min-width: @md) {
+      @rules();
+   }
+}
+
+.lg_block(@rules) {
+   @media (min-width: @lg) {
+      @rules();
+   }
+}
+
+.xl_block(@rules) {
+   @media (min-width: @xl) {
+      @rules();
+   }
+}
+
+.xxl_block(@rules) {
+   @media (min-width: @xxl) {
+      @rules();
+   }
+}
+
+.big_block(@rules) {
+   @media (min-width: @big) {
+      @rules();
+   }
+}
+.custom_block(@custom, @rules) {
+   @media (min-width: @custom) {
+      @rules();
+   }
+}
+
+// ======= @media desktop first =======================
+//.big_block(@rules) {
+//   @media (min-width: @big) {
+//      @rules();
+//   }
+//}
+//
+//.xxl_block(@rules) {
+//   @media (max-width: @xxl) {
+//      @rules();
+//   }
+//}
+//
+//.xl_block(@rules) {
+//   @media (max-width: @xl) {
+//      @rules();
+//   }
+//}
+//
+//.lg_block(@rules) {
+//   @media (max-width: @lg) {
+//      @rules();
+//   }
+//}
+//
+//.md_block(@rules) {
+//   @media (max-width: @md) {
+//      @rules();
+//   }
+//}
+//
+//.sm_block(@rules) {
+//   @media (max-width: @sm) {
+//      @rules();
+//   }
+//}
+//
+//.xs_block(@rules) {
+//   @media (max-width: @xs) {
+//      @rules();
+//   }
+//}
+//
+//.custom_block(@custom, @rules) {
+//   @media (max-width: @custom) {
+//      @rules();
+//   }
+//}
