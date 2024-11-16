@@ -12,6 +12,7 @@ const props = defineProps ( {
 } )
 
 const elem = computed ( () => {
+   // @ts-ignore
    return icons[ props.name ]
 } )
 

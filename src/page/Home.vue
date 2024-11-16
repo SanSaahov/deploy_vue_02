@@ -2,7 +2,6 @@
 <script setup lang="ts">
 import { watchEffect, markRaw, ref, reactive, computed, watch, isReactive, isRef, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import { useUserStore } from '@/store/test.store'
-import * as process from 'process'
 
 const userStore = useUserStore ()
 
