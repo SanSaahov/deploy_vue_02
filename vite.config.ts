@@ -42,7 +42,7 @@ export default defineConfig ( {
    },
    build: {
       // Директория для выходных файлов сборки
-      outDir: 'build'
+      outDir: 'dist'
    },
    base: process.env.NODE_ENV === 'production' ? '/deploy_vue_02/' : '/'
 } )
