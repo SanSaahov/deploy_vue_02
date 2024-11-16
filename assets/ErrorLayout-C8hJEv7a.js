@@ -1,0 +1,1 @@
+import{_ as o,c as r,q as t,F as a,b as s,o as n}from"./index-B_qQ7oMv.js";const c={name:"ErrorLayout"},l=s("h1",null,"404",-1);function _(e,u,d,p,f,m){return n(),r(a,null,[l,t(e.$slots,"default")],64)}const $=o(c,[["render",_]]);export{$ as default};
