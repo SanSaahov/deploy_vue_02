@@ -38,7 +38,7 @@ console.log ( '===  =============================' )
 
 <template>
    <div class="global_green container">
-      <h1 class="san_san">Title from .env ::: {{ title }}
+      <h1 class="san_san">Title from .env ::: {{ title }} :::: deploy_vue_02
          <ui-icon name="tw" width="70px" height="70px" stroke="red" fill="none"></ui-icon>
       </h1>
       <hr>
